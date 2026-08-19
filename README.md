@@ -1,7 +1,7 @@
 
 # Verilog Hardware Design & Simulation
 
-**Contributors:** Shreya Sen & K. Charan
+
 
 This repository contains Verilog-based hardware designs, testbenches, simulation files, and the workflow for implementing the designs on FPGA hardware.
 
