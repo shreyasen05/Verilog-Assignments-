@@ -1,4 +1,4 @@
-````markdown
+
 # Verilog Hardware Design & Simulation
 
 **Contributors:** Shreya Sen & K. Charan
