@@ -75,4 +75,5 @@ The S-AES implementation uses FPGA memory resources to store fixed lookup tables
 Two lookup tables are stored in memory:
 
 I. S-Box
+
 II. Round Constants (Rcon)
