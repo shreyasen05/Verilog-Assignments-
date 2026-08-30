@@ -65,7 +65,7 @@ Plaintext ─────┘        │         │
      │
      ▼
  Ciphertext
-```text
+```
 ---
 
 #2. Memory Management and Lookup Table Implementation
