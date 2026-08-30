@@ -68,7 +68,7 @@ Plaintext ─────┘        │         │
 ```
 ---
 
-#2. Memory Management and Lookup Table Implementation
+# 2. Memory Management and Lookup Table Implementation
 
 The S-AES implementation uses FPGA memory resources to store fixed lookup tables instead of implementing the tables using large amounts of combinational logic.
 
