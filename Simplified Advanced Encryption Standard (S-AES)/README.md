@@ -25,8 +25,8 @@ The complete encryption process is:
                         │
                         ▼
                  ┌─────────────┐
-                 │ Key          │
-                 │ Expansion    │
+                 │ Key         │
+                 │ Expansion   │
                  └──────┬──────┘
                         │
               ┌─────────┼─────────┐
@@ -34,32 +34,32 @@ The complete encryption process is:
              K0        K1        K2
               │         │         │
               │         │         │
-Plaintext ─────┘         │         │
-     │                   │         │
-     ▼                   │         │
+Plaintext ─────┘        │         │
+     │                  │         │
+     ▼                  │         │
  AddRoundKey            │         │
  (XOR with K0)          │         │
-     │                   │         │
-     ▼                   │         │
+     │                  │         │
+     ▼                  │         │
  NibbleSub              │         │
-     │                   │         │
-     ▼                   │         │
+     │                  │         │
+     ▼                  │         │
  ShiftRows              │         │
-     │                   │         │
-     ▼                   │         │
+     │                  │         │
+     ▼                  │         │
  MixColumns             │         │
-     │                   │         │
-     ▼                   │         │
- AddRoundKey ────────────┘         │
- (XOR with K1)                     │
-     │                             │
-     ▼                             │
+     │                  │         │
+     ▼                  │         │
+ AddRoundKey ───────────┘         │
+ (XOR with K1)                    │
+     │                            │
+     ▼                            │
  NibbleSub                        │
-     │                             │
-     ▼                             │
+     │                            │
+     ▼                            │
  ShiftRows                        │
-     │                             │
-     ▼                             │
+     │                            │
+     ▼                            │
  AddRoundKey ─────────────────────┘
  (XOR with K2)
      │
