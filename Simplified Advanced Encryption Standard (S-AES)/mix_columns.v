@@ -1,7 +1,21 @@
-module mix_columns (in,out);
-    input [15:0]  in;
-    output [15:0]  out;
+//////////////////////////////////////////////////////////////////////////////////
+// Module Name : mix_columns
+// Project Name : Simplified Advanced Encryption Standard (S-AES)
+//
+// Description :
+//   This transformation provides further diffusion by mixing data within each column.
+//   N′ 1 = N1⊕(4·N2)
+//   N′ 2 = (4·N1)⊕N2
+//
+// Student Name : Shreya Sen
+// S-ID : 231001002086
+//////////////////////////////////////////////////////////////////////////////////
 
+
+module mix_columns (
+    input [15:0]  in,
+    output [15:0]  out
+);
     function [3:0] mul;
         input [3:0] a;
         begin
@@ -25,7 +39,7 @@ module mix_columns (in,out);
                 default: mul = 4'h0;
             endcase
         end
-    endfunction;
+    endfunction
     
     assign out[15:12] = in[15:12] ^ mul(in[7:4]);
     assign out[11:8] = in[11:8] ^ mul(in[3:0]);
