@@ -1,8 +1,23 @@
-module sbox (clk,in,out);
-    input clk;
-    input [15:0] in;
-    output [15:0] out;
-    
+//////////////////////////////////////////////////////////////////////////////////
+// Module Name : sbox
+// Project Name : Simplified Advanced Encryption Standard (S-AES)
+//
+// Description :
+//   This module performs the S-AES Nibble substitution
+//   A fixed 16×4-bit ROM that maps each 4-bit input nibble to a corresponding 
+//   4-bit output. Four parallel lookups are used to process the 16-bit state 
+//   in one operation.
+//
+// Student Name : Shreya Sen
+// S-ID : 231001002086
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module sbox (
+    input clk,
+    input [15:0] in,
+    output [15:0] out
+);    
     wire [3:0] addr0, addr1, addr2, addr3;
     wire [3:0] dout0, dout1, dout2, dout3;
 
