@@ -1,0 +1,18 @@
+import sys
+
+input_file = sys.argv[1]
+output_file = sys.argv[2]
+
+with open(input_file, "rb") as f:
+    data = f.read()
+
+with open(output_file, "w") as f:
+    f.write("START 0x00000000\n")
+
+    for i in range(0, len(data), 4):
+        word = int.from_bytes(data[i:i+4], byteorder="little")
+        f.write(f"{word:08x}\n")
+
+print(f"Created {output_file}")
+print(f"Bytes read: {len(data)}")
+print(f"Instructions: {len(data) // 4}")
