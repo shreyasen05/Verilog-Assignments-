@@ -50,9 +50,3 @@ gcc -Wall -Wextra src/main.c -o build/riscv-sim
   --mem build/fibonacci.mem \
   --max-cycles 100
 ```
-
-## Command-line Options
-
---mem <file>           Input memory image
---max-cycles <number>  Maximum number of cycles
---help                 Show help
